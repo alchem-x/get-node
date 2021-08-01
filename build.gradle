@@ -1,0 +1,13 @@
+plugins {
+    id 'com.github.node-gradle.node'
+}
+
+task version(type: NpmTask) {
+    args = ['version']
+}
+
+node {
+    version = '16.6.0'
+    npmVersion = '7.20.3'
+    download = true
+}
