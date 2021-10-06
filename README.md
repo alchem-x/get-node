@@ -9,6 +9,6 @@
 ## Update $PATH
 
 ```sh
-export NODE_HOME=/opt/node/.gradle/nodejs/node-v16.6.0-darwin-x64
+export NODE_HOME="/opt/node/.gradle/nodejs/node-v${NODE_VERSION}-darwin-x64"
 export PATH=$NODE_HOME/bin:$PATH
 ```
