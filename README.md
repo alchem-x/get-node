@@ -1,20 +1,13 @@
 # node
 
-## Fetch Node.js
+- `./setup`
+- `./clean`
+
+## Use profile
 
 ```sh
-./gradlew nodeSetup
-```
-
-## Update $PATH
-
-```sh
-export NODE_HOME="/opt/node/.gradle/nodejs/node-v${NODE_VERSION}-darwin-x64"
-export PATH=$NODE_HOME/bin:$PATH
-```
-
-## Or just use node
-
-```sh
-./node
+NODE_PATH="/path/to/node"
+if [ -f $NODE_PATH/.profile ]; then
+    . $NODE_PATH/.profile
+fi
 ```
