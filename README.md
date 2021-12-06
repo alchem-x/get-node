@@ -1,13 +1,13 @@
 # node
 
-- `./setup`
-- `./clean`
+- `./get-node.sh`
+- `./clean.sh`
 
 ## Use profile
 
 ```sh
-NODE_PATH=/path/to/node
-if [ -f $NODE_PATH/.profile ]; then
-    . $NODE_PATH/.profile
+GET_NODE_PATH=/path/to/node
+if [ -f $GET_NODE_PATH/.profile ]; then
+    . $GET_NODE_PATH/.profile
 fi
 ```
