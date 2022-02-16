@@ -3,7 +3,7 @@ cd "$(dirname "$0")" || exit 1
 
 PLATFORM="$(uname -s | tr '[:upper:]' '[:lower:]')"
 
-NODE_VERSION='17.1.0'
+NODE_VERSION='17.5.0'
 
 NODE_DISTRIBUTION_FILE_NAME="node-v$NODE_VERSION-$PLATFORM-x64"
 
