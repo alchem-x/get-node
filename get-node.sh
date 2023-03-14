@@ -4,7 +4,7 @@ cd "$(dirname "$0")" || exit 1
 PLATFORM="$(uname -s | tr '[:upper:]' '[:lower:]')"
 ARCH="$(uname -m)"
 
-NODE_VERSION='18.7.0'
+NODE_VERSION='19.7.0'
 
 NODE_DISTRIBUTION_FILE_NAME="node-v$NODE_VERSION-$PLATFORM-$ARCH"
 
