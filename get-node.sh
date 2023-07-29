@@ -4,7 +4,7 @@ cd "$(dirname "$0")" || exit 1
 PLATFORM="$(uname -s | tr '[:upper:]' '[:lower:]')"
 ARCH="$(uname -m)"
 
-if [ ARCH == 'x86_64' ]; then
+if [ "$ARCH" == 'x86_64' ]; then
     ARCH='x64'
 fi
 
