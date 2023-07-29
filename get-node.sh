@@ -4,6 +4,10 @@ cd "$(dirname "$0")" || exit 1
 PLATFORM="$(uname -s | tr '[:upper:]' '[:lower:]')"
 ARCH="$(uname -m)"
 
+if [ARCH == 'x86_64']; then
+    ARCH='x64'
+fi
+
 NODE_VERSION='20.2.0'
 
 NODE_DISTRIBUTION_FILE_NAME="node-v$NODE_VERSION-$PLATFORM-$ARCH"
