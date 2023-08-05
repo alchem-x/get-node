@@ -9,6 +9,7 @@ if [ "$ARCH" == 'x86_64' ]; then
 fi
 
 NODE_VERSION='20.5.0'
+
 NODE_FILE_NAME="node-v$NODE_VERSION-$PLATFORM-$ARCH"
 NODE_FILE_NAME_EXT="$NODE_FILE_NAME.tar.gz"
 NODE_URL="https://nodejs.org/dist/v$NODE_VERSION/$NODE_FILE_NAME_EXT"
@@ -17,12 +18,8 @@ if [ -d "$NODE_FILE_NAME" ]; then
     rm -rf "$NODE_FILE_NAME"
 fi
 
-echo "Downloading $NODE_URL"
-
 curl "$NODE_URL" -o "$NODE_FILE_NAME_EXT"
 tar -xzf "$NODE_FILE_NAME_EXT"
 rm "$NODE_FILE_NAME_EXT"
 
 echo "export PATH=\"$(pwd)/$NODE_FILE_NAME/bin:\$PATH\"" >> .profile
-echo 
-echo 'Setup Node.js: '"$NODE_FILE_NAME"
