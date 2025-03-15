@@ -1,0 +1,25 @@
+{
+  "name": "get-node",
+  "version": "1.0.0",
+  "description": "- `./get-node.sh` - `./clean.sh`",
+  "main": "get_node.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alchemy-works/get-node.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alchemy-works/get-node/issues"
+  },
+  "homepage": "https://github.com/alchemy-works/get-node#readme",
+  "dependencies": {
+    "lodash-es": "^4.17.21",
+    "zx": "^8.3.2"
+  }
+}
